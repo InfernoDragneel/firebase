@@ -42,9 +42,9 @@ toast.success("suppression Effectuée")
   <thead>
     <tr>
       <th scope="col">No.</th>
-      <th scope="col">Nom</th>
-      <th scope="col">Email</th>
-      <th scope="col">Conatct</th>
+      <th scope="col">Nom du produit</th>
+      <th scope="col">Description</th>
+      <th scope="col">Images</th>
       <th scope="col">Action</th> 
     </tr>
   </thead>
@@ -74,6 +74,7 @@ toast.success("suppression Effectuée")
   </tbody>
 </table>
             </div>
+            <a href='/home'><button type="submit" class="btn btn-primary" ></button></a>
         </>
     );
 };

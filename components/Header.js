@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
         <div className='header'>
-            <p className='logo'>Ifran App</p>
+            
             <div className='header-right'>
                 <Link to="/">
                     <p 
@@ -32,15 +32,16 @@ const Header = () => {
                      className={`${activeTab === "AddContact" ? "active":""}`}
                      onClick={()=> setActiveTab("AddContact")} 
                     >
-                           Ajouter un contact
+                          Creer nouveau produit
                     </p>
                 </Link>
-                <Link to="/about">
+                <Link to="/">
                     <p 
-                     className={`${activeTab === "About" ? "active":""}`}
-                     onClick={()=> setActiveTab("About")} 
+                     className={`${activeTab === "Deconnexion" ? "active":""}`}
+                     onClick={()=> setActiveTab("Deconnexion")} 
                     >
-                           A Propos
+                           Deconnexion
+                           
                     </p>
                 </Link>
             </div>

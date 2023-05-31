@@ -25,19 +25,19 @@ useEffect(()=>{
         <div>
         
 <div class="mb-3">
-<label for="name" class="form-label">Nom</label>
+<label for="name" class="form-label">Nom du produit</label>
 <input type="text"name='name' class="form-control" id="name" aria-describedby="emailHelp" value={utilisateur.name} readOnly/>
 
 </div>
 
 <div class="mb-3">
-<label for="email" class="form-label">Email</label>
+<label for="email" class="form-label">Description</label>
 <input type="email"name='email' class="form-control" id="email" aria-describedby="emailHelp" value={utilisateur.email} readOnly/>
 
 </div>
 
 <div class="mb-3">
-<label for="contact" class="form-label">Numéro</label>
+<label for="contact" class="form-label">Prix</label>
 <input type="number"name='contact' class="form-control" id="contact" aria-describedby="emailHelp" value={utilisateur.contact} readOnly/>
 
 </div>

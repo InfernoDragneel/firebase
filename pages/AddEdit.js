@@ -62,12 +62,12 @@ const AddEdit = () => {
           if(err){
             toast.error(err.message)
           }else {
-            toast.success("le contact a bien été mis à jour")
+            toast.success("Les articles ont été bien été mis à jour")
           }
         })
       }
       //setTimeout (()=>navigate("/"),700);
-      toast.success("le formulaire a été envoyé avec succès");
+      toast.success("Vos articles ont été envoyés avec succes !");
       navigate("/");
     }
    
@@ -76,24 +76,28 @@ const AddEdit = () => {
         <div>
             <form onSubmit={soumettreFormulaire}>
               <div class="mb-3">
-                <label for="name" class="form-label">Nom</label>
+                <label for="name" class="form-label">Nom du produit</label>
                 <input type="text"name='name'onChange={changerValeurInput} value={name || ""} class="form-control" id="name" aria-describedby="emailHelp"/>
+    
+
     
               </div>
   
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
+                <label for="email" class="form-label">Description</label>
                 <input type="email"name='email'onChange={changerValeurInput} value={email || ""} class="form-control" id="email" aria-describedby="emailHelp"/>
                 
               </div>
 
+             
+
               <div class="mb-3">
-                <label for="contact" class="form-label">Numéro</label>
+                <label for="contact" class="form-label">Prix</label>
                 <input type="number"name='contact'onChange={changerValeurInput} value={contact || ""} class="form-control" id="contact" aria-describedby="emailHelp"/>
     
               </div>
   
-              <input type="submit" class="btn btn-primary" value={id ?"Mettre à jour":"Enregistrer"}/>
+              <input type="submit" class="btn btn-primary" value={id ?"Mettre à jour":"Enregistrer"}/ >
             </form>
         </div>
     );

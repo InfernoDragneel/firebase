@@ -30,7 +30,7 @@ const Connecter = () => {
       <div className='container pt-5'>
         <form onSubmit={soumettre}>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Adresse E-mail</label>
+                <label for="exampleInputi1" class="form-label">Adresse E-mail</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name='email' onChange={(e)=>setEmail(e.target.value)}/>
             </div>
             <div class="mb-3">

@@ -7,5 +7,5 @@ const About = () => {
         </div>
     );
 };
-
+<a href='/add'><button type="submit" class="btn btn-primary" >Inscription</button></a>
 export default About;
